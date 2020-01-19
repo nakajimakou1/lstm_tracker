@@ -1,8 +1,8 @@
 ROOT_PATH=$1
-CODE_HOME=$ROOT_PATH/fyp_2019/LSTM_Kanchana
-PYTHONPATH=PYTHONPATH:$CODE_HOME
+CODE_HOME=$ROOT_PATH/
+PYTHONPATH=$PYTHONPATH:$CODE_HOME
 export PYTHONPATH
-python train.py \
+python3 train.py \
     --data_path1 $CODE_HOME/data/kitti_tracks_{}.json \
     --data_path2 $CODE_HOME/data/mot_tracks_{}.json \
     --job_dir $CODE_HOME/models/exp04 \

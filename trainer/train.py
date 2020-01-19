@@ -1,6 +1,13 @@
 import argparse
 import os
 
+# 2020.01.28 add
+import sys
+# sys.path.append('../../lstm_tracking/trainer')
+# sys.path.append('/home/nakajima/src/lstm_tracking/trainer')
+# sys.path.append('/home/nakajima/src/lstm_tracking')
+# sys.path.append('../../lstm_tracking')
+
 import tensorflow as tf
 
 from trainer.helpers import get_logging_tensor_hook
@@ -12,11 +19,11 @@ def parse_args():
     """Parse input arguments."""
     parser = argparse.ArgumentParser(description='train_network')
     parser.add_argument('--data_path1', dest='data_path1', help='path to data JSON',
-                        default="/Users/kanchana/Documents/current/FYP/fyp_2019/LSTM_Kanchana/data/kitti_tracks_{}.json")
+                        default="/home/nakajima/src/lstm_tracker/data/kitti_tracks_{}.json")
     parser.add_argument('--data_path2', dest='data_path2', help='path to data JSON',
-                        default="/Users/kanchana/Documents/current/FYP/fyp_2019/LSTM_Kanchana/data/mot_tracks_{}.json")
+                        default="/home/nakajima/src/lstm_tracker/data/mot_tracks_{}.json")
     parser.add_argument('--job_dir', dest='output_dir', help='model output directory',
-                        default="/Users/kanchana/Documents/current/FYP/fyp_2019/LSTM_Kanchana/models/exp04")
+                        default="/home/nakajima/src/lstm_tracker/LSTM_Kanchana/models/exp04")
     parser.add_argument('--lr', dest='lr', help='learning rate', default='0.001')
     parser.add_argument('--batch', dest='batch', help='batch size', default='64')
     parser.add_argument('--epochs', dest='epochs', help='num epochs', default='1000')
