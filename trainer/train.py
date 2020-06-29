@@ -3,10 +3,11 @@ import os
 
 # 2020.01.28 add
 import sys
-# sys.path.append('../../lstm_tracking/trainer')
-# sys.path.append('/home/nakajima/src/lstm_tracking/trainer')
+sys.path.append('../../lstm_tracker')
+sys.path.append('../../lstm_tracker/trainer')
+sys.path.append('../../lstm_tracker/trainer/trainer')
+sys.path.append('/cygdrive/c/Users/nakaj/src/lstm_tracker/trainer')
 # sys.path.append('/home/nakajima/src/lstm_tracking')
-# sys.path.append('../../lstm_tracking')
 
 import tensorflow as tf
 

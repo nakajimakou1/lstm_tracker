@@ -456,8 +456,8 @@ node {
             size: 2
           }
         }
-        string_val: "/home/nakajima/src/lstm_tracker//data/kitti_tracks_{}.json"
-        string_val: "/home/nakajima/src/lstm_tracker//data/mot_tracks_{}.json"
+        string_val: "../data/kitti_tracks_{}.json"
+        string_val: "../data/mot_tracks_{}.json"
       }
     }
   }
@@ -140860,7 +140860,7 @@ node {
         dtype: DT_STRING
         tensor_shape {
         }
-        string_val: "_temp_de66a176e8bd430a8b40b316528eb8f7/part"
+        string_val: "_temp_4fb244f3f1bc47b6b22d6121089863d5/part"
       }
     }
   }
